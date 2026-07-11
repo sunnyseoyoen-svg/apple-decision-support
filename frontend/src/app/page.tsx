@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { HarvestForm } from "@/components/forms/HarvestForm";
 import { ResultCard } from "@/components/dashboard/ResultCard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Sparkles, Truck, Calendar, Target } from "lucide-react";
+import { ArrowLeft, Sparkles, Truck, Calendar, Target, Clock } from "lucide-react";
 import type { HarvestInput, AnalysisResult } from "@/types";
 import { analyzeHarvest } from "@/lib/api";
 
@@ -52,10 +53,20 @@ export default function HomePage() {
         <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
           <div className="max-w-6xl mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
-              <Button variant="ghost" size="sm" onClick={handleBack} className="gap-1">
-                <ArrowLeft className="h-4 w-4" />
-                다시 입력하기
-              </Button>
+              <Link href="/" className="flex items-center gap-3">
+                <Truck className="h-8 w-8 text-green-600" />
+                <span className="text-xl font-bold text-gray-900">Apple Harvest Advisor</span>
+              </Link>
+              <nav className="flex items-center gap-4">
+                <Link href="/history" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                  <Clock className="h-4 w-4 inline mr-1" />
+                  분석 히스토리
+                </Link>
+                <Button variant="ghost" size="sm" onClick={handleBack} className="gap-1">
+                  <ArrowLeft className="h-4 w-4" />
+                  다시 입력하기
+                </Button>
+              </nav>
             </div>
           </div>
         </header>

@@ -1,0 +1,22 @@
+{
+  "busa": {
+    "CA": {"baseLimit": 150, "qualityFactor": 0.8},
+    "NORMAL": {"baseLimit": 90, "qualityFactor": 0.7}
+  },
+  "hongro": {
+    "CA": {"baseLimit": 90, "qualityFactor": 0.75},
+    "NORMAL": {"baseLimit": 60, "qualityFactor": 0.65}
+  },
+  "gamhong": {
+    "CA": {"baseLimit": 120, "qualityFactor": 0.8},
+    "NORMAL": {"baseLimit": 75, "qualityFactor": 0.7}
+  },
+  "yangkwang": {
+    "CA": {"baseLimit": 100, "qualityFactor": 0.75},
+    "NORMAL": {"baseLimit": 65, "qualityFactor": 0.65}
+  },
+  "sinano": {
+    "CA": {"baseLimit": 110, "qualityFactor": 0.8},
+    "NORMAL": {"baseLimit": 70, "qualityFactor": 0.7}
+  }
+}

@@ -1,0 +1,28 @@
+# backend/render.yaml
+services:
+  - type: web
+    name: apple-harvest-advisor-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: harvest-advisor-db
+          property: connectionString
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
+      - key: FRONTEND_URL
+        value: https://your-vercel-app.vercel.app
+      - key: ALLOWED_ORIGINS
+        value: https://your-vercel-app.vercel.app
+    healthCheckPath: /health
+
+databases:
+  - name: harvest-advisor-db
+    databaseName: harvest_advisor
+    user: harvest_user
+    plan: free

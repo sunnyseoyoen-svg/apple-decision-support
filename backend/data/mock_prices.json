@@ -1,0 +1,20 @@
+[
+  {"variety": "busa", "month": 10, "minPrice": 2800, "maxPrice": 3200, "avgPrice": 3000},
+  {"variety": "busa", "month": 11, "minPrice": 3000, "maxPrice": 3500, "avgPrice": 3250},
+  {"variety": "busa", "month": 12, "minPrice": 3200, "maxPrice": 3800, "avgPrice": 3500},
+  {"variety": "busa", "month": 1, "minPrice": 3500, "maxPrice": 4200, "avgPrice": 3850},
+  {"variety": "busa", "month": 2, "minPrice": 3800, "maxPrice": 4500, "avgPrice": 4150},
+  {"variety": "busa", "month": 3, "minPrice": 3500, "maxPrice": 4000, "avgPrice": 3750},
+  {"variety": "hongro", "month": 9, "minPrice": 2500, "maxPrice": 3000, "avgPrice": 2750},
+  {"variety": "hongro", "month": 10, "minPrice": 2700, "maxPrice": 3200, "avgPrice": 2950},
+  {"variety": "hongro", "month": 11, "minPrice": 2800, "maxPrice": 3300, "avgPrice": 3050},
+  {"variety": "gamhong", "month": 10, "minPrice": 3000, "maxPrice": 3500, "avgPrice": 3250},
+  {"variety": "gamhong", "month": 11, "minPrice": 3200, "maxPrice": 3800, "avgPrice": 3500},
+  {"variety": "gamhong", "month": 12, "minPrice": 3400, "maxPrice": 4000, "avgPrice": 3700},
+  {"variety": "yangkwang", "month": 9, "minPrice": 2600, "maxPrice": 3100, "avgPrice": 2850},
+  {"variety": "yangkwang", "month": 10, "minPrice": 2800, "maxPrice": 3300, "avgPrice": 3050},
+  {"variety": "yangkwang", "month": 11, "minPrice": 3000, "maxPrice": 3500, "avgPrice": 3250},
+  {"variety": "sinano", "month": 10, "minPrice": 2900, "maxPrice": 3400, "avgPrice": 3150},
+  {"variety": "sinano", "month": 11, "minPrice": 3100, "maxPrice": 3600, "avgPrice": 3350},
+  {"variety": "sinano", "month": 12, "minPrice": 3300, "maxPrice": 3800, "avgPrice": 3550}
+]

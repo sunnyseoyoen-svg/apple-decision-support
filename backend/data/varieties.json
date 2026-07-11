@@ -1,0 +1,47 @@
+[
+  {
+    "id": "busa",
+    "name": "부사 (후지)",
+    "harvestSeason": "10월 하순~11월 상순",
+    "storageLimitCA": 150,
+    "storageLimitNormal": 90,
+    "typicalBrix": {"min": 13.5, "max": 16.0},
+    "typicalFirmness": {"min": 7.0, "max": 9.5}
+  },
+  {
+    "id": "hongro",
+    "name": "홍로",
+    "harvestSeason": "9월 중순~10월 상순",
+    "storageLimitCA": 90,
+    "storageLimitNormal": 60,
+    "typicalBrix": {"min": 13.0, "max": 15.0},
+    "typicalFirmness": {"min": 6.5, "max": 8.5}
+  },
+  {
+    "id": "gamhong",
+    "name": "감홍",
+    "harvestSeason": "10월 상순~10월 하순",
+    "storageLimitCA": 120,
+    "storageLimitNormal": 75,
+    "typicalBrix": {"min": 14.0, "max": 16.5},
+    "typicalFirmness": {"min": 7.0, "max": 9.0}
+  },
+  {
+    "id": "yangkwang",
+    "name": "양광",
+    "harvestSeason": "9월 하순~10월 중순",
+    "storageLimitCA": 100,
+    "storageLimitNormal": 65,
+    "typicalBrix": {"min": 13.0, "max": 15.5},
+    "typicalFirmness": {"min": 6.5, "max": 8.5}
+  },
+  {
+    "id": "sinano",
+    "name": "시나노스위트",
+    "harvestSeason": "10월 중순~10월 하순",
+    "storageLimitCA": 110,
+    "storageLimitNormal": 70,
+    "typicalBrix": {"min": 14.5, "max": 17.0},
+    "typicalFirmness": {"min": 6.5, "max": 8.5}
+  }
+]

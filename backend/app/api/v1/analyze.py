@@ -115,6 +115,23 @@ async def get_history(db: Session = Depends(get_db)):
     return history
 
 
+@router.delete("/history/{history_id}")
+async def delete_history(history_id: int, db: Session = Depends(get_db)):
+    result = db.query(DBAnalysisResult).filter(DBAnalysisResult.request_id == history_id).first()
+    if not result:
+        raise HTTPException(status_code=404, detail="분석 기록을 찾을 수 없습니다")
+    
+    request = db.query(AnalysisRequest).filter(AnalysisRequest.id == history_id).first()
+    if not request:
+        raise HTTPException(status_code=404, detail="분석 요청을 찾을 수 없습니다")
+    
+    db.delete(result)
+    db.delete(request)
+    db.commit()
+    
+    return {"success": True}
+
+
 @router.get("/mock/data")
 async def get_mock_data():
     import json

@@ -13,16 +13,20 @@ class Settings(BaseSettings):
     API_HOST: str = "0.0.0.0"
     API_PORT: int = 8000
     FRONTEND_URL: str = "http://localhost:3000"
-    ALLOWED_ORIGINS: List[str] = ["http://localhost:3000"]
+    ALLOWED_ORIGINS: str = "http://localhost:3000"
 
     SECRET_KEY: str = secrets.token_urlsafe(32)
 
     @field_validator("ALLOWED_ORIGINS", mode="before")
     @classmethod
-    def parse_cors(cls, v: str | List[str]) -> List[str]:
-        if isinstance(v, str):
-            return [origin.strip() for origin in v.split(",")]
+    def parse_cors(cls, v: str | List[str]) -> str:
+        if isinstance(v, list):
+            return ",".join(v)
         return v
+
+    @property
+    def allowed_origins_list(self) -> List[str]:
+        return [origin.strip() for origin in self.ALLOWED_ORIGINS.split(",")]
 
     @property
     def is_production(self) -> bool:

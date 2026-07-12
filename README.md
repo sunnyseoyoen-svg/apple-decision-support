@@ -153,35 +153,7 @@ MIT License
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open Pull Request
 
-## 📋 환경 변수
 
-### Frontend (.env.local)
-```bash
-NEXT_PUBLIC_API_URL=http://localhost:8000/api/v1
-NEXT_PUBLIC_APP_NAME=Apple Harvest Advisor
-NEXT_PUBLIC_APP_VERSION=1.0.0
-```
-
-### Backend (.env)
-```bash
-# Database
-DATABASE_URL=sqlite:///./harvest_advisor.db
-# Production: DATABASE_URL=postgresql://user:pass@host:5432/dbname
-
-# LLM (선택: OpenAI 또는 Ollama 로컬)
-OPENAI_API_KEY=sk-...
-# OLLAMA_BASE_URL=http://localhost:11434
-# OLLAMA_MODEL=llama3.1:8b
-
-# Server
-API_HOST=0.0.0.0
-API_PORT=8000
-FRONTEND_URL=http://localhost:3000
-ALLOWED_ORIGINS=http://localhost:3000
-
-# Security
-SECRET_KEY=your-secret-key-min-32-chars
-```
 
 ## 🎯 MVP 핵심 기능
 
